@@ -1,0 +1,179 @@
+.ul-one{
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    
+}
+
+.pool, .filter-tok{
+    display: grid;
+    margin-bottom: 35px;
+}
+
+.filter-tok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 44%;
+    margin-top: 3vh;
+    border-radius: 50%;
+    background: none;
+    background-position: center;
+    color: rgb(170, 72, 148);
+    font-size: 90px;
+    width: 50px;
+    height: 50px;
+    transition: all 8s linear ease-in-out;
+    animation: live-2 3s linear reverse;
+}
+
+@keyframes live-2 {
+    0%{
+        transform: scale(1.5);
+    }
+    25%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(black.avif);
+    background-size: 1080px 480px;
+    background-position: top;
+}
+
+span, a, img{
+    margin-left: 4px;
+    margin-top: 10px;
+}
+/*Header_1*/
+
+.content{
+    margin: 0;
+    padding: 0;
+}
+
+
+.content ul a{
+    margin: 10px;
+    transition: all 1s;
+    filter: grayscale(10%);
+    background: none;
+}
+
+.content ul a:hover{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    filter: grayscale(60%);
+
+}
+/*header_1the -End*/
+
+
+/*Loop text h1*/
+
+/* .img-11{
+    margin: 0px 0px;
+    border-radius: 20%;
+    transform: rotateY(-75deg);
+    filter: blur(1px);
+} */
+
+
+h1{
+    font-size: 30px;
+    color: red;
+    background: none;
+}
+
+.tiktok-embed{
+    border-radius: 50px;
+    border: none;
+}
+.pool{
+    margin: 0;
+}
+
+/*moooononoonofpohojdfiihlfl*/
+
+.container{
+    margin-left: 40px;
+    margin-top: -40px;
+    font-size: 8px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+.sun{
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: goldenrod;
+    border-radius: 50%;
+    box-shadow: 0 0 3em gold,
+    inset 0 0 90px black;
+}
+.earth, .moon{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+.earth{
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+}
+
+.moon{
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+}
+
+.earth::before,
+.moon::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.earth::before{
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background: linear-gradient(60deg, yellow, rgb(93, 66, 66), rgb(227, 95, 95));
+    box-shadow: 0 10px 20px goldenrod;
+    background-size: 20px 20px;
+}
+
+
+.moon::before{
+    top: 0.8em;
+    right: 0.2em;width: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: whitesmoke;
+}
+
+@keyframes orbit {
+    0%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
